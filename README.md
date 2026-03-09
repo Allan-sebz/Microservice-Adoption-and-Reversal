@@ -144,3 +144,30 @@ Chaos Monkey ensures system can survive random failures
 
 Video Upload → Lambda 1 → Step Functions → Lambda 2 → Lambda 3 → Lambda 4 → S3/DynamoDB
 (6+ separate services, all communicating over network)
+
+
+**The Problem: Monthly Costs**
+| Component | Cost |
+|-----------|------|
+| Step Functions (orchestration) | $45,000 |
+| Lambda executions | $38,000 |
+| S3 data transfer | $22,000 |
+| SQS queues | $8,000 |
+| CloudWatch logs | $5,000 |
+| **TOTAL** | **$118,000+** |
+
+**Why They Moved Back:**
+- Each video required 8-12 state transitions
+- Data written/read multiple times to S3
+- Cold starts added latency
+- Distributed debugging was nightmare
+
+**The Monolithic Solution:**
+```java
+// Single service handling everything
+public class VideoProcessorService {
+    // 1. Download video ONCE to local SSD
+    // 2. Convert AND detect defects in same process (memory, not network)
+    // 3. Upload results ONCE
+    // 4. Store metadata
+}
