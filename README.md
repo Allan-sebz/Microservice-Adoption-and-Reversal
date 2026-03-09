@@ -35,3 +35,15 @@ Netflix began migrating from a monolith to microservices after a **database corr
 | **Open Connect** | Custom CDN | 10,000+ appliances inside ISP networks for fast streaming |
 
 ### Example: How Netflix Handles a Request
+User opens Netflix app
+
+Eureka discovers available services
+
+API Gateway routes to appropriate services
+
+Each service (recommendations, catalog, playback) handles its part
+
+If any service fails, Hystrix provides fallback
+
+Chaos Monkey ensures system can survive random failures
+
