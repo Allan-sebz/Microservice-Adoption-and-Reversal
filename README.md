@@ -141,3 +141,6 @@ Chaos Monkey ensures system can survive random failures
 ### Company 1: Amazon Prime Video
 
 **Original Microservices Architecture:**
+
+Video Upload → Lambda 1 → Step Functions → Lambda 2 → Lambda 3 → Lambda 4 → S3/DynamoDB
+(6+ separate services, all communicating over network)
