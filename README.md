@@ -163,7 +163,7 @@ Video Upload → Lambda 1 → Step Functions → Lambda 2 → Lambda 3 → Lambd
 - Distributed debugging was nightmare
 
 **The Monolithic Solution:**
-```java
+``java
 // Single service handling everything
 public class VideoProcessorService {
     // 1. Download video ONCE to local SSD
@@ -214,3 +214,67 @@ Network congestion from inter-service traffic
 Developers managing 10-15 services each
 
 New hires took 3-6 months to understand system
+
+# 📊 Results After Consolidation
+
+| Metric | Before | After | Improvement |
+|--------|--------|-------|-------------|
+| Number of Services | 3,000+ | 800+ | **73% reduction** |
+| Trip Request Time | 3-5 seconds | 1-2 seconds | **60% faster** |
+| Deployment Time | 4+ hours | 45 minutes | **81% faster** |
+| Infrastructure Cost | Baseline | 35% lower | **35% savings** |
+
+---
+
+# 📊 Summary Comparison Table
+
+| Company | Original | Switched To | Switched Back | Primary Reason |
+|---------|----------|-------------|---------------|----------------|
+| **Netflix** | Monolith | Microservices | No | Scale to 270M users |
+| **WePay** | Monolith | Microservices | No | Deployment speed |
+| **Alight** | Mainframe | Microservices | No | Modernization |
+| **Airbnb** | Monolith | Microservices | No | Developer productivity |
+| **Amazon Prime** | Microservices | — | Yes | Cost (90% reduction) |
+| **Uber** | Microservices | — | Yes | Complexity (35% cost cut) |
+
+---
+
+# 💡 Key Lessons
+
+## ✅ When Microservices Make Sense
+
+| Factor | Requirement |
+|--------|-------------|
+| **Team Size** | > 100 developers |
+| **User Scale** | > 10 million users |
+| **Domain Complexity** | Clear bounded contexts |
+| **DevOps Culture** | Strong automation and monitoring |
+| **Technology Needs** | Polyglot requirements |
+
+## ✅ When to Stay Monolith (or Go Back)
+
+| Factor | Requirement |
+|--------|-------------|
+| **Team Size** | < 50 developers |
+| **User Scale** | < 1 million users |
+| **Application Type** | Simple CRUD |
+| **Operational Expertise** | Limited DevOps |
+| **Budget** | Tight (microservices are expensive!) |
+
+---
+
+# 🎯 The Real Lesson
+
+> *"Start with a monolith. Extract services ONLY when you have a clear reason. And be willing to go back if the complexity isn't worth it."*
+
+---
+
+# 📚 References
+
+1. [Netflix Tech Blog](https://netflixtechblog.com) - "Microservices at Netflix"
+2. [Amazon Prime Video Case Study](https://aws.amazon.com/blogs/architecture/) (2023)
+3. [Uber Engineering](https://eng.uber.com) - "Domain-Oriented Architecture"
+4. [WePay Engineering](https://wePay.github.io/tech-blog) - "Moving from Monolith to Microservices"
+5. [Airbnb Engineering](https://medium.com/airbnb-engineering) - "Decomposing the Monolith"
+
+---
