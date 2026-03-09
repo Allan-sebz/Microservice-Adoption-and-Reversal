@@ -171,3 +171,46 @@ public class VideoProcessorService {
     // 3. Upload results ONCE
     // 4. Store metadata
 }
+
+Results After Moving Back:
+
+Metric	        Before	       After	    Improvement
+Monthly Cost	$118,000	   $11,800	90%      reduction
+Processing Time	30-45 seconds 8-12 seconds	73% faster
+Error Rate	        2.3%	  0.4%	   83% fewer errors
+Services to Debug	15	       1	93% simpler
+Key Quote:
+
+"Building evolvable software systems is a strategy, not a religion. Revisiting your architecture with an open mind is a must."
+— Werner Vogels, Amazon CTO
+
+Company 2: Uber
+The Microservices Explosion:
+
+2014: 50 services
+
+2015: 500 services
+
+2016: 1,200 services
+
+2017: 2,200 services
+
+2018: 3,000+ services (peak)
+
+Problems Created:
+
+Problem	Impact
+Deployment Hell	Coordinating releases across 3,000 services
+Monitoring Overload	50,000 metrics per service = impossible
+Debugging Nightmares	One trip request touched 50+ services
+Latency Accumulation	50 services × 10-50ms = 0.5-2.5 seconds overhead
+Resource Waste	Each service needed minimum resources
+Why They Moved Back:
+
+Too many fine-grained services
+
+Network congestion from inter-service traffic
+
+Developers managing 10-15 services each
+
+New hires took 3-6 months to understand system
