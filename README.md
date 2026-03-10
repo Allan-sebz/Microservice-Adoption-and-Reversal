@@ -263,13 +263,13 @@ New hires took 3-6 months to understand system
 
 ---
 
-# 🎯 The Real Lesson
+# The Real Lesson
 
 > *"Start with a monolith. Extract services ONLY when you have a clear reason. And be willing to go back if the complexity isn't worth it."*
 
 ---
 
-# 📚 References
+# References
 
 1. [Netflix Tech Blog](https://netflixtechblog.com) - "Microservices at Netflix"
 2. [Amazon Prime Video Case Study](https://aws.amazon.com/blogs/architecture/) (2023)
