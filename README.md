@@ -101,7 +101,7 @@ Chaos Monkey ensures system can survive random failures
 - Kafka for event streaming
 - Services for enrollment, eligibility, pricing, claims, tax
 
-**Results:**
+**Findings:**
 - ✅ Feature delivery: 12-18 months → 2-4 weeks
 - ✅ 35 million users supported
 - ✅ Modern tech stack attracts talent
