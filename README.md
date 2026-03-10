@@ -4,7 +4,7 @@ A comprehensive analysis of how companies have adopted microservices architectur
 
 ---
 
-## 📋 Quick Answers
+## Quick Answers
 
 | Question | Answer |
 |----------|--------|
@@ -14,7 +14,7 @@ A comprehensive analysis of how companies have adopted microservices architectur
 
 ---
 
-## 1. 🎬 How Netflix Uses Microservices
+## 1. How Netflix Uses Microservices
 
 ### Background
 Netflix began migrating from a monolith to microservices after a **database corruption in 2008** stopped DVD shipments for 3 days, costing millions.
@@ -55,7 +55,7 @@ Chaos Monkey ensures system can survive random failures
 
 ---
 
-## 2. 🏢 3 Companies That Shifted TO Microservices
+## 2. 3 Companies That Shifted TO Microservices
 
 ### Company 1: WePay (FinTech)
 
@@ -136,7 +136,7 @@ Chaos Monkey ensures system can survive random failures
 
 ---
 
-## 3. 🔄 2 Companies That Shifted BACK to Monoliths
+## 3. 2 Companies That Shifted BACK to Monoliths
 
 ### Company 1: Amazon Prime Video
 
@@ -215,7 +215,7 @@ Developers managing 10-15 services each
 
 New hires took 3-6 months to understand system
 
-# 📊 Results After Consolidation
+#  Results After Consolidation
 
 | Metric | Before | After | Improvement |
 |--------|--------|-------|-------------|
@@ -226,7 +226,7 @@ New hires took 3-6 months to understand system
 
 ---
 
-# 📊 Summary Comparison Table
+# Summary Comparison Table
 
 | Company | Original | Switched To | Switched Back | Primary Reason |
 |---------|----------|-------------|---------------|----------------|
@@ -239,7 +239,7 @@ New hires took 3-6 months to understand system
 
 ---
 
-# 💡 Key Lessons
+# Key Lessons
 
 ## ✅ When Microservices Make Sense
 
